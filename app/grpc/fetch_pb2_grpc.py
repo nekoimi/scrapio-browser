@@ -3,7 +3,7 @@
 import grpc
 import warnings
 
-import fetch_pb2 as fetch__pb2
+from app.grpc import fetch_pb2 as fetch__pb2
 
 GRPC_GENERATED_VERSION = '1.81.1'
 GRPC_VERSION = grpc.__version__
