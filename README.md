@@ -1,4 +1,4 @@
-# Drission Rod
+# scrapio-browser
 
 基于 [CloakBrowser-Manager](https://github.com/CloakHQ/CloakBrowser-Manager) 远程浏览器的高性能网页抓取 gRPC 服务。
 
