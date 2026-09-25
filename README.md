@@ -28,15 +28,15 @@ uv run main.py
 
 ```bash
 # 构建镜像
-docker build -t drission-rod .
+docker build -t scrapio-browser .
 
 # 运行
 docker run -d \
-  --name drission-rod \
+  --name scrapio-browser \
   -p 8191:8191 \
   -e CLOAK_MANAGER_URL=https://your-cloak-manager.com \
   -e CLOAK_PROFILE_ID=your-profile-id \
-  drission-rod
+  scrapio-browser
 ```
 
 ## 配置
@@ -91,9 +91,9 @@ print(response.html if response.success else response.error)
 ## 架构
 
 ```
-┌─────────────┐     gRPC      ┌──────────────┐    CDP/WebSocket    ┌─────────────────────┐
-│   Client    │ ────────────→ │ drission-rod │ ──────────────────→ │ CloakBrowser-Manager│
-└─────────────┘               └──────────────┘                     └─────────────────────┘
+┌─────────────┐     gRPC      ┌─────────────────┐    CDP/WebSocket    ┌─────────────────────┐
+│   Client    │ ────────────→ │ scrapio-browser │ ──────────────────→ │ CloakBrowser-Manager│
+└─────────────┘               └─────────────────┘                     └─────────────────────┘
                                      │                                      │
                                      │ 按需启停                              │ 管理浏览器
                                      ▼                                      ▼

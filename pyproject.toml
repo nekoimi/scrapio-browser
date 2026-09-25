@@ -1,7 +1,7 @@
 [project]
-name = "drission-rod"
+name = "scrapio-browser"
 version = "0.1.0"
-description = "drission-rod"
+description = "scrapio-browser"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
